@@ -315,9 +315,9 @@ class ContextRecommender(AbstractRecommender):
             self.float_field_offsets = np.array(
                 (0, *np.cumsum(self.float_field_dims)[:-1]), dtype=np.long
             )
-            self.float_embedding_table = FLEmbedding(
-                self.float_field_dims, self.float_field_offsets, self.embedding_size
-            )
+            # self.float_embedding_table = FLEmbedding(
+            #     self.float_field_dims, self.float_field_offsets, self.embedding_size
+            # )
         if len(self.token_seq_field_dims) > 0:
             self.token_seq_embedding_table = nn.ModuleList()
             for token_seq_field_dim in self.token_seq_field_dims:
