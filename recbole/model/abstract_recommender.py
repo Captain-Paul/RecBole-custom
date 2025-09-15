@@ -18,7 +18,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from recbole.model.layers import FMEmbedding, FMFirstOrderLinear, FLEmbedding
+from recbole.model.layers import FMEmbedding, FMFirstOrderLinear
 from recbole.utils import ModelType, InputType, FeatureSource, FeatureType, set_color
 
 
